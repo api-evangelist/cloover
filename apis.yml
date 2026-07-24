@@ -1,8 +1,17 @@
 aid: cloover
 name: Cloover
-description: 'Cloover is a company surfaced as a portfolio company of qed-investors and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Cloover is a climate-fintech company building an all-in-one, "Shopify of
+  energy" platform for the residential renewable-energy transition. It connects
+  the stakeholders of home energy - installers, homeowners (prosumers),
+  manufacturers, energy providers and investors - so small and mid-sized
+  installation firms can sell, quote, finance and manage solar panels, home
+  batteries, heat pumps and EV charging in a single package. The platform pairs
+  installer sales and operations software with embedded financing and energy
+  management, and offers homeowners flexible subscription and financing options.
+  Founded in 2023 and operating primarily in Germany, Austria and wider Europe,
+  Cloover has raised sizeable seed and Series A equity plus a large debt facility
+  and is backed by QED Investors, MMC Ventures, Lowercarbon Capital and others.
 url: https://raw.githubusercontent.com/api-evangelist/cloover/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +19,30 @@ x-backed-by:
 - qed-investors
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://static.wixstatic.com/media/1857a1_d22f80e44f99402bba0db29490a73df5~mv2.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Fintech
+- Climate
+- Renewable Energy
+- Solar
+- Energy
+- Embedded Finance
+- Installers
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +50,35 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cloover-domain-security.yml
 - type: Website
-  url: https://cloover.co
+  url: https://www.cloover.com
+- type: Blog
+  url: https://www.cloover.com/blog
+- type: BlogRSS
+  url: https://www.cloover.com/blog-feed.xml
+- type: SignUp
+  url: https://app.cloover.com/signup
+- type: Login
+  url: https://app.cloover.com/en/login
+- type: Support
+  url: https://www.cloover.com/kontakt
+- type: HelpCenter
+  url: https://help.cloover.co/
+- type: TermsOfService
+  url: https://www.cloover.com/nutzungsbedingungen
+- type: PrivacyPolicy
+  url: https://www.cloover.com/datenschutzbestimmungen
+- type: LinkedIn
+  url: https://www.linkedin.com/company/cloover/
+- type: MCPServer
+  name: Cloover Wix Site MCP
+  url: mcp/cloover-mcp.yml
+- type: LLMsTxt
+  url: llms/cloover-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

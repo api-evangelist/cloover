@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: probe of /.well-known/ across Cloover hosts
+notes: >-
+  No standard discovery documents are published. www.cloover.com is a Wix site
+  that returns HTTP 400 for /.well-known/* paths; cloover.co (Bubble.io) returns
+  404. The one machine-discovery surface Cloover does publish is /llms.txt on
+  www.cloover.com (captured in llms/cloover-llms.txt) which advertises the Wix
+  Site MCP endpoint (see mcp/cloover-mcp.yml).
+hosts:
+  - host: https://www.cloover.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 400
+      - path: /.well-known/openid-configuration
+        status: 400
+      - path: /.well-known/oauth-authorization-server
+        status: 400
+      - path: /.well-known/api-catalog
+        status: 400
+      - path: /.well-known/ai-plugin.json
+        status: 400
+      - path: /llms.txt
+        status: 200
+        file: ../llms/cloover-llms.txt
+  - host: https://cloover.co
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://help.cloover.co
+    documents:
+      - path: /.well-known/security.txt
+        status: 404

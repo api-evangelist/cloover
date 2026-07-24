@@ -1,0 +1,21 @@
+{
+  "repo": "cloover",
+  "feeds": [
+    {
+      "source": "https://www.cloover.com",
+      "feed_url": "https://www.cloover.com/blog-feed.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://www.cloover.com/blog",
+      "feed_url": "https://www.cloover.com/en/blog-feed.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-07-20T13:31:34Z"
+}
