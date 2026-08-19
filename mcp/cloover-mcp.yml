@@ -2,13 +2,11 @@ generated: '2026-07-18'
 method: searched
 status: published
 source: https://www.cloover.com/llms.txt
-notes: >-
-  Cloover's public marketing site (www.cloover.com) is a Wix-hosted site that
-  exposes the Wix Site MCP endpoint for AI-agent access, as advertised in the
-  site's published /llms.txt. This is a generic Wix Site MCP surface (site
-  content, business details, search, bookings/checkout), not a bespoke Cloover
-  developer/product API. The former Cloover "Installer API" host
-  (api.cloover.co) no longer resolves (NXDOMAIN as of 2026-07-18).
+notes: Cloover's public marketing site (www.cloover.com) is a Wix-hosted site that exposes the Wix Site
+  MCP endpoint for AI-agent access, as advertised in the site's published /llms.txt. This is a generic
+  Wix Site MCP surface (site content, business details, search, bookings/checkout), not a bespoke Cloover
+  developer/product API. The former Cloover "Installer API" host (api.cloover.co) no longer resolves (NXDOMAIN
+  as of 2026-07-18).
 server:
   name: cloover-wix-site
   transport: http
@@ -16,17 +14,27 @@ server:
   vendor: Wix Site MCP
   docs: https://dev.wix.com/docs/develop-websites/articles/get-started/about-the-wix-site-mcp
 tools:
-  - name: GetBusinessDetails
-    description: Retrieves business and site details such as timezone, email, phone number and address.
-  - name: SearchInSite
-    description: Searches the site for information.
-  - name: SearchSiteApiDocs
-    description: Retrieves the API documentation for the Wix business solutions installed on the site so an AI client knows how to use them.
-  - name: GenerateVisitorToken
-    description: Creates a new visitor session and retrieves a visitor access token for the site.
-  - name: CallWixSiteAPI
-    description: Calls API methods on the site to perform actions on behalf of a visitor (query site data, book an appointment, start a purchase).
-  - name: ReadFullDocsArticle
-    description: Retrieves a full article from the Wix developer documentation portal.
-  - name: ReadFullDocsMethodSchema
-    description: Retrieves the full schema for a Wix API method.
+- name: GetBusinessDetails
+  description: Retrieves business and site details such as timezone, email, phone number and address.
+- name: SearchInSite
+  description: Searches the site for information.
+- name: SearchSiteApiDocs
+  description: Retrieves the API documentation for the Wix business solutions installed on the site so
+    an AI client knows how to use them.
+- name: GenerateVisitorToken
+  description: Creates a new visitor session and retrieves a visitor access token for the site.
+- name: CallWixSiteAPI
+  description: Calls API methods on the site to perform actions on behalf of a visitor (query site data,
+    book an appointment, start a purchase).
+- name: ReadFullDocsArticle
+  description: Retrieves a full article from the Wix developer documentation portal.
+- name: ReadFullDocsMethodSchema
+  description: Retrieves the full schema for a Wix API method.
+deployment:
+  mode: remote
+  endpoint: https://www.cloover.com/_api/mcp
+  verified: probed
+  probe: live
+  tools: 9
+  checked: '2026-08-12'
+  source: catalog MCP census
