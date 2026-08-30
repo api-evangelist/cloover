@@ -17,7 +17,7 @@
     },
     {
       "source": "https://www.cloover.com",
-      "feed_url": "https://www.cloover.com/blog-feed.xml",
+      "feed_url": "https://www.cloover.com/en/blog-feed.xml",
       "title": "",
       "saved": 0,
       "method": "discovered"
@@ -31,5 +31,5 @@
     }
   ],
   "post_count": 10,
-  "fetched": "2026-08-22T20:20:02Z"
+  "fetched": "2026-08-30T22:33:40Z"
 }
