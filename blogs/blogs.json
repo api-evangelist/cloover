@@ -10,17 +10,10 @@
     },
     {
       "source": "https://www.cloover.com",
-      "feed_url": "https://www.cloover.com/en/blog-feed.xml",
-      "title": "",
-      "saved": 0,
-      "method": "discovered"
-    },
-    {
-      "source": "https://www.cloover.com/blog-feed.xml",
       "feed_url": "https://www.cloover.com/blog-feed.xml",
       "title": "",
       "saved": 0,
-      "method": "feed"
+      "method": "discovered"
     },
     {
       "source": "https://www.cloover.com/en/blog-feed.xml",
@@ -28,10 +21,17 @@
       "title": "",
       "saved": 0,
       "method": "feed"
+    },
+    {
+      "source": "https://www.cloover.com/blog-feed.xml",
+      "feed_url": "https://www.cloover.com/blog-feed.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     }
   ],
-  "post_count": 10,
-  "fetched": "2026-09-13T13:00:00Z",
+  "post_count": 12,
+  "fetched": "2026-09-19T20:17:39Z",
   "feed_nature": "undetermined",
   "feed_nature_basis": null,
   "feed_nature_note": "Whether these posts are the vendor publishing or its support community, decided on the URL path grammar of the saved posts -- not the hostname, which carries both on Khoros, and not author diversity, which flags large vendor blogs as forums. 'undetermined' means undetermined."
